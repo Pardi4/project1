@@ -1,0 +1,12 @@
+// $ sass -w scss:css
+@use 'reset';
+@use 'base';
+@use 'nav';
+@use 'header';
+
+*{
+    transition: .5s;
+}
+
+
+
