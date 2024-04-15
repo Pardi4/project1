@@ -1,6 +1,9 @@
 *, *::after,*::before{
     box-sizing: border-box;
 }
+html,body {
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Roboto', 'sans-serif';
     height: 300vh;

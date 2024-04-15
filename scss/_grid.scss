@@ -9,11 +9,7 @@
     @include lg{
         width: 1160px;
     }
-    @include lgg{
-        width:  100%;
-        padding: 30px;
-        text-align: center;
-    }
+    
 }
 .row{
     display: flex;
@@ -56,10 +52,5 @@
         @include lg{
             flex: 0 0 25%;
         }
-    }
-    p{
-        @include lg{
-        font-size: 2rem;
-    }
     }
 }
