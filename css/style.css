@@ -59,10 +59,10 @@ a {
 
 html, body {
   scroll-behavior: smooth;
+  font-family: "Roboto", "sans-serif";
 }
 
 body {
-  font-family: "Roboto", "sans-serif";
   height: 300vh;
 }
 
@@ -247,6 +247,38 @@ section p {
   .col-lg25 {
     flex: 0 0 25%;
   }
+}
+
+input, textarea, label {
+  display: block;
+  margin-bottom: 5px;
+  font-family: inherit;
+  width: 100%;
+  font-size: 1.6rem;
+}
+
+input, textarea {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid lightgrey;
+  outline: 0;
+}
+input:focus, textarea:focus {
+  border: 1px solid grey;
+}
+input[type=submit], textarea[type=submit] {
+  margin-top: 30px;
+}
+input[type=submit]:hover, textarea[type=submit]:hover {
+  background-color: lightgrey;
+}
+input[type=submit]:active, textarea[type=submit]:active {
+  transition: 0.1s;
+  background: grey;
+}
+
+textarea {
+  resize: none;
 }
 
 * {
