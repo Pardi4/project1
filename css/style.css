@@ -191,6 +191,33 @@ section p {
   padding: 20px 0;
 }
 
+.menu-box {
+  box-shadow: 0 0 10px grey;
+  border-radius: 6px;
+}
+.menu-box:hover {
+  box-shadow: 0 0 20px grey;
+  cursor: pointer;
+}
+.menu-box:active {
+  transition: 0.1s;
+  background-color: darkgrey;
+}
+
+.picture {
+  height: 200px;
+  background: url("../assets/img/bg_header.webp") center/cover;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.text {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .container {
   padding: 10px;
 }
