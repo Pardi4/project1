@@ -186,7 +186,6 @@ section p {
 
 .container {
   padding: 10px;
-  text-align: center;
 }
 @media screen and (min-width: 800px) {
   .container {
@@ -197,6 +196,13 @@ section p {
 @media screen and (min-width: 1200px) {
   .container {
     width: 1160px;
+  }
+}
+@media screen and (min-width: 1650px) {
+  .container {
+    width: 100%;
+    padding: 30px;
+    text-align: center;
   }
 }
 
@@ -213,10 +219,42 @@ section p {
 
 .col {
   width: 100%;
-}
-.col-md50 {
-  flex: 0 0 50%;
   padding: 20px;
+}
+@media screen and (min-width: 800px) {
+  .col-md50 {
+    flex: 0 0 50%;
+  }
+}
+@media screen and (min-width: 800px) {
+  .col-md33 {
+    flex: 0 0 33.3333333333%;
+  }
+}
+@media screen and (min-width: 800px) {
+  .col-md25 {
+    flex: 0 0 25%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .col-lg50 {
+    flex: 0 0 50%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .col-lg33 {
+    flex: 0 0 33.3333333333%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .col-lg25 {
+    flex: 0 0 25%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .col p {
+    font-size: 2rem;
+  }
 }
 
 * {

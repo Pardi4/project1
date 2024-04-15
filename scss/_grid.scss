@@ -2,13 +2,17 @@
 
 .container{
     padding: 10px;
-    text-align: center;
     @include md{
         width: 760px;
         margin: 0 auto;
     }
     @include lg{
         width: 1160px;
+    }
+    @include lgg{
+        width:  100%;
+        padding: 30px;
+        text-align: center;
     }
 }
 .row{
@@ -21,9 +25,41 @@
 }
 .col{
     width: 100%;
+    padding: 20px;
 
     &-md50{
-        flex: 0 0 50%;
-        padding: 20px;
+        @include md{
+            flex: 0 0 50%;
+        }
+    }
+    &-md33{
+        @include md{
+            flex: 0 0 33.33333333333%;
+        }
+    }
+    &-md25{
+        @include md{
+            flex: 0 0 25%;
+        }
+    }
+    &-lg50{
+        @include lg{
+            flex: 0 0 50%;
+        }
+    }
+    &-lg33{
+        @include lg{
+            flex: 0 0 33.3333333333%;
+        }
+    }
+    &-lg25{
+        @include lg{
+            flex: 0 0 25%;
+        }
+    }
+    p{
+        @include lg{
+        font-size: 2rem;
+    }
     }
 }
