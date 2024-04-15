@@ -173,6 +173,9 @@ header::after {
 section {
   min-height: 100vh;
 }
+section:nth-of-type(even) {
+  background-color: whitesmoke;
+}
 section h2 {
   text-align: center;
   padding: 70px 0px;
@@ -279,6 +282,11 @@ input[type=submit]:active, textarea[type=submit]:active {
 
 textarea {
   resize: none;
+}
+
+footer {
+  background-color: #0d0d0d;
+  color: whitesmoke;
 }
 
 * {
