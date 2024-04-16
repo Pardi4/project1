@@ -194,21 +194,44 @@ section p {
 .menu-box {
   box-shadow: 0 0 10px grey;
   border-radius: 6px;
+  position: relative;
+  opacity: 0.8;
 }
 .menu-box:hover {
   box-shadow: 0 0 20px grey;
   cursor: pointer;
+  opacity: 1;
 }
-.menu-box:active {
-  transition: 0.1s;
-  background-color: darkgrey;
+.menu-box:active::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  background-color: rgba(0, 0, 0, 0.158);
+  top: 0;
 }
 
 .picture {
   height: 200px;
-  background: url("../assets/img/bg_header.webp") center/cover;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
+}
+
+.picture1 {
+  background: url("../assets/img/pizza1.webp") center/cover;
+}
+
+.picture2 {
+  background: url("../assets/img/pizza2.webp") center/cover;
+}
+
+.picture3 {
+  background: url("../assets/img/pizza3.webp") center/cover;
+}
+
+.picture4 {
+  background: url("../assets/img/pizza4.webp") center/cover;
 }
 
 .text {
