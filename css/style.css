@@ -95,6 +95,54 @@ nav {
 .menu span {
   font-size: 3rem;
 }
+.menu span:hover {
+  cursor: pointer;
+  color: lightgrey;
+}
+
+.div-menu {
+  background-color: black;
+  color: #fff;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.6rem;
+}
+@media screen and (min-width: 1200px) {
+  .div-menu {
+    width: 25%;
+    right: 0;
+  }
+}
+.div-menu li {
+  padding: 20px;
+  transition: 0.1;
+}
+.div-menu li:hover {
+  cursor: pointer;
+  color: red;
+}
+.div-menu span {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  color: white;
+  font-size: 3rem;
+}
+.div-menu span:hover {
+  cursor: pointer;
+  color: red;
+  text-shadow: 1px 0 0 red;
+}
+
+.hide-menu {
+  display: none;
+}
 
 header {
   height: 100vh;
@@ -348,7 +396,9 @@ textarea {
   text-align: center;
   padding: 16px;
   font-size: 1.6rem;
-  background-color: rgba(2, 46, 2, 0.6);
+  background-color: rgba(20, 185, 20, 0.6);
+  margin-bottom: 15px;
+  border-radius: 6px;
 }
 
 footer {
